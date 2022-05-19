@@ -26,14 +26,20 @@
     {
       "id": 1,
       "title": "First Todo",
-      "author": "Vladimir Aleksic",
-      "completed": false
+      "author": "vladimir",
+      "completed": true
     },
     {
       "id": 2,
       "title": "Second Todo",
-      "author": "Jovana Markovic",
-      "completed": false
+      "author": "vladimir",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Third Todo",
+      "author": "vladimir",
+      "completed": true
     }
   ]
 }

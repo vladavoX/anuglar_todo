@@ -1,0 +1,85 @@
+.todo__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  margin: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  mat-card {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    text-align: left;
+
+    .checked,
+    .unchecked {
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgb(209, 209, 209);
+      border-radius: 5px;
+      margin-left: 10px;
+      margin-right: 28px;
+    }
+
+    .checked {
+      background-color: #8e7597;
+    }
+
+    h2,
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    p {
+      font-style: italic;
+      color: rgb(101, 101, 101);
+    }
+  }
+
+  mat-icon {
+    position: absolute;
+    right: 20px;
+    font-size: 2rem;
+    color: rgb(157, 0, 0);
+    cursor: pointer;
+  }
+}
+
+form {
+  width: 100%;
+  width: 340px;
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  button {
+    margin-left: 20px;
+    height: 52.06px;
+  }
+}

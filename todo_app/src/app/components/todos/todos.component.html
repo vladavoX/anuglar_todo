@@ -1,7 +1,27 @@
-<table>
-  <tbody>
-    <tr *ngFor="let t of todos; index as i">
-      <td>{{t['title']}}</td>
-    </tr>
-  </tbody>
-</table>
+<section class="todo__page">
+  <ul>
+    <li *ngFor="let t of todos; index as i">
+      <mat-card (click)="toggleTodo(i)">
+        <div *ngIf="t.completed" class="checked"></div>
+        <div *ngIf="!t.completed" class="unchecked"></div>
+        <div>
+          <h2 *ngIf="t.completed" style="text-decoration:line-through">{{t["title"]}}</h2>
+          <h2 *ngIf="!t.completed" style="text-decoration:none">{{t["title"]}}</h2>
+          <p>{{t["author"]}}</p>
+        </div>
+      </mat-card>
+      <mat-icon (click)="deleteTodo(i)">delete_forever</mat-icon>
+    </li>
+  </ul>
+
+  <form [formGroup]="todoForm" (submit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Todo</mat-label>
+      <input formControlName="title" matInput placeholder="Create new Todo..." required>
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary">
+      <mat-icon>add</mat-icon>
+    </button>
+  </form>
+
+</section>

@@ -43,4 +43,8 @@ export class LoginService {
     }
     return false;
   }
+
+  getUser() {
+    return this.user;
+  }
 }
