@@ -7,16 +7,8 @@
   "users": [
     {
       "id": 1,
-      "username": "jovana",
-      "password": "markovic",
-      "roles": [
-        "ROLE_ADMIN"
-      ]
-    },
-    {
-      "id": 2,
-      "username": "vladimir",
-      "password": "aleksic",
+      "username": "user",
+      "password": "user",
       "roles": [
         "ROLE_ADMIN"
       ]
@@ -26,19 +18,19 @@
     {
       "id": 1,
       "title": "First Todo",
-      "author": "vladimir",
-      "completed": true
+      "author": "user",
+      "completed": false
     },
     {
       "id": 2,
       "title": "Second Todo",
-      "author": "vladimir",
+      "author": "user",
       "completed": true
     },
     {
       "id": 3,
       "title": "Third Todo",
-      "author": "vladimir",
+      "author": "user",
       "completed": true
     }
   ]
